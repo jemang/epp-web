@@ -17,7 +17,7 @@ module Depp
       xml_dir_path = Rails.root + 'app/views/depp/xml_consoles/epp_requests'
       xml = File.read("#{xml_dir_path}/#{params[:obj]}/#{params[:epp_action]}.xml")
       xml.gsub!(/<clTRID>(.*?)<\/clTRID>/, "<clTRID>#{cl_trid}</clTRID>")
-      render text: xml
+      render plain: xml
     end
   end
 end

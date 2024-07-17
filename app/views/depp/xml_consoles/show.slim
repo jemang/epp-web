@@ -1,0 +1,46 @@
+.row
+  .col-md-8
+    = form_tag(xml_console_path) do
+      .form-group
+        = text_area_tag(:payload, params[:payload], class: 'form-control', rows: 30, style: 'font-family:monospace; font-size: 11px;')
+
+      = button_tag t('send_epp_request'), class: 'btn btn-default'
+
+    - if @result
+      hr
+      / = preserve do
+      = CodeRay.scan(@result.to_s.force_encoding("UTF-8"), :xml).div().html_safe
+
+      ruby:
+        doc = Nokogiri::XML(@result)
+        puts doc
+
+  .col-md-4
+    h4 Domain
+    - ["domainGet", "domainCheck", "domainCheckFee", "domainCheckMulti", "domainCheckMultiFee", "domainCreate", "domainCreateDnssec", "domainCreateFee", "domainCreateIdn", "domainDelete", "domainRenew", "domainRenewFee", "domainRestoreRgp", "domainRestoreRgpReport", "domainRestoreRgpReportFee", "domainTransferApprove", "domainTransferQuery", "domainTransferReject", "domainTransferRequest", "domainTransferRequestCancel", "domainTransferRequestFee", "domainUpdateContact", "domainUpdateDnssec", "domainUpdateHost", "domainUpdateStatus"].each do |name|
+      a.js-load-xml(href="javascript:void(0)" data-obj="domain" data-epp-action="#{name}")
+        = name
+      br
+
+    h4 Others
+    - ["hello", "hostCheck", "hostCreate", "hostCreateInBailwick", "hostDelete", "hostGet", "hostUpdate", "login", "loginWithExtension", "logout"].each do |name|
+      a.js-load-xml(href="javascript:void(0)" data-obj="others" data-epp-action="#{name}")
+        = name
+      br
+
+    h4 Contact
+    - ["contactGet", "contactCheck", "contactCreate", "contactDelete", "contactTransferApprove", "contactTransferReject", "contactTransferRequest", "contactTransferRequestCancel", "contactUpdate", "contactUpdateParam"].each do |name|
+      a.js-load-xml(href="javascript:void(0)" data-obj="contact" data-epp-action="#{name}")
+        = name
+      br
+
+    h4 Keyrelay
+    a.js-load-xml(href="javascript:void(0)" data-obj="keyrelay" data-epp-action="keyrelay")
+      | Keyrelay
+
+javascript:
+  $('.js-load-xml').click(function() {
+    $.get('xml_console/load_xml', {obj: $(this).data('obj'), epp_action: $(this).data('epp-action')}, function(data) {
+      $('textarea[name="payload"]').html(data);
+    });
+  });

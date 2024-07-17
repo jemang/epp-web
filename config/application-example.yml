@@ -16,3 +16,5 @@ key_path:  '/home/webclient/webclient/shared/ca/private/webclient.key'
 # Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
 secret_key_base: 'please-change-it-you-can-generate-it-with-rake-secret'
+
+new_relic_license_key: '123'
