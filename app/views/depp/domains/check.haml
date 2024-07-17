@@ -1,0 +1,54 @@
+= render 'depp/shared/title', name: t(:check_domain)
+
+.row
+  .col-md-12
+    = render 'check_form'
+
+%hr
+
+.row
+  .col-md-12
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title= t('result')
+      .panel-body
+        %dl.dl-horizontal
+          %dt= t('name')
+          %dd= @data.css('name').text
+
+          - name = @data.css('name').first
+          %dt= t('available')
+          %dd= name['avail']
+
+          - if @data.css('reason').text.present?
+            %dt= t('reason')
+            %dd= @data.css('reason').text
+
+        %hr
+        .table-responsive
+          %table.table.table-hover.table-bordered.table-condensed
+            %thead
+              %tr
+                %th{class: 'col-xs-6'}= t('name')
+                %th= t('currency')
+                %th= t('command')
+                %th= t('period')
+                %th= t('class')
+                %th{class: 'col-xs-6'}= t('fee')
+            %tbody
+              - @data.css('extension').css('cd').each do |x|
+                - fee = x.css('fee').first
+                %tr
+                  %td= x.css('name').text
+                  %td= x.css('currency').text
+                  %td= x.css('command').text
+                  %td= x.css('period').text
+                  %td= x.css('class').text
+                  %td
+                    Fee
+                    %ul
+                      %li= fee.text
+                    - fee.each do |x|
+                      = x[0]
+                      %ul
+                        %li= x[1]
