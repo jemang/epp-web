@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+	<command>
+		<check>
+			<domain:check
+				xmlns:domain="urn:ietf:params:xml:ns:domain-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd">
+				<domain:name>dev-test.my</domain:name>
+			</domain:check>
+		</check>
+		<extension>
+			<fee:check
+				xmlns:fee="urn:ietf:params:xml:ns:fee-0.7">
+				<fee:domain>
+					<fee:name>dev-test.my</fee:name>
+					<fee:currency>USD</fee:currency>
+					<fee:command>create</fee:command>
+					<fee:period unit="y">1</fee:period>
+				</fee:domain>
+				<fee:domain>
+					<fee:name>dev-test.my</fee:name>
+					<fee:currency>USD</fee:currency>
+					<fee:command>renew</fee:command>
+					<fee:period unit="y">1</fee:period>
+				</fee:domain>
+				<fee:domain>
+					<fee:name>dev-test.my</fee:name>
+					<fee:currency>USD</fee:currency>
+					<fee:command>transfer</fee:command>
+					<fee:period unit="y">1</fee:period>
+				</fee:domain>
+				<fee:domain>
+					<fee:name>dev-test.my</fee:name>
+					<fee:currency>USD</fee:currency>
+					<fee:command>restore</fee:command>
+					<fee:period unit="y">1</fee:period>
+				</fee:domain>
+			</fee:check>
+		</extension>
+		<clTRID>ABC::1684070468585</clTRID>
+	</command>
+</epp>

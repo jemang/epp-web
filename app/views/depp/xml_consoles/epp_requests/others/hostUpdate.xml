@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+	<command>
+		<update>
+			<host:update
+				xmlns:host="urn:ietf:params:xml:ns:host-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:host-1.0 host-1.0.xsd">
+				<host:name>ns1.dev-test70.my</host:name>
+				<host:add>
+					<host:addr ip="v4">1.2.3.7</host:addr>
+				</host:add>
+				<host:rem>
+					<host:addr ip="v4">1.2.3.4</host:addr>
+				</host:rem>
+			</host:update>
+		</update>
+		<clTRID>ABC::1684072372164</clTRID>
+	</command>
+</epp>

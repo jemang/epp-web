@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+	<command>
+		<create>
+			<domain:create
+				xmlns:domain="urn:ietf:params:xml:ns:domain-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd">
+				<domain:name>xn--c1yn36f.my</domain:name>
+				<domain:period unit="y">1</domain:period>
+				<domain:ns>
+					<domain:hostObj>ns1.example.com</domain:hostObj>
+					<domain:hostObj>ns2.example.com</domain:hostObj>
+				</domain:ns>
+				<domain:registrant>CK1684071500122T</domain:registrant>
+				<domain:contact type="tech">CK1684071501228L</domain:contact>
+				<domain:contact type="admin">CK1684071500430E</domain:contact>
+				<domain:contact type="billing">CK1684071501523B</domain:contact>
+				<domain:authInfo>
+					<domain:pw>_vh}6+X{PsZ3Z65*4Zy7n0785</domain:pw>
+				</domain:authInfo>
+			</domain:create>
+		</create>
+		<extension>
+			<idn:data
+				xmlns:idn="urn:ietf:params:xml:ns:idn-1.0">
+				<idn:table>zh</idn:table>
+				<idn:uname>點看.my</idn:uname>
+			</idn:data>
+		</extension>
+		<clTRID>ABC::1684071501825</clTRID>
+	</command>
+</epp>

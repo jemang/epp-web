@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+	<command>
+		<transfer op="request">
+			<contact:transfer
+				xmlns:contact="urn:ietf:params:xml:ns:contact-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd">
+				<contact:id>ck1684075485293d</contact:id>
+				<contact:authInfo>
+					<contact:pw>c[445U52?5ccS&gt;8h==Pm2E9W5</contact:pw>
+				</contact:authInfo>
+			</contact:transfer>
+		</transfer>
+		<clTRID>ABC::1684076161889</clTRID>
+	</command>
+</epp>

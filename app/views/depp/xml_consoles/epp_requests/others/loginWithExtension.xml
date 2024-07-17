@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+	<command>
+		<login>
+			<clID>mynic_a</clID>
+			<pw>b2fba8989f291add</pw>
+			<options>
+				<version>1.0</version>
+				<lang>en</lang>
+			</options>
+			<svcs>
+				<objURI>urn:ietf:params:xml:ns:contact-1.0</objURI>
+				<objURI>urn:ietf:params:xml:ns:domain-1.0</objURI>
+				<objURI>urn:ietf:params:xml:ns:host-1.0</objURI>
+				<svcExtension>
+					<extURI>urn:ietf:params:xml:ns:secDNS-1.1</extURI>
+					<extURI>urn:ietf:params:xml:ns:rgp-1.0</extURI>
+					<extURI>urn:ietf:params:xml:ns:idn-1.0</extURI>
+					<extURI>urn:ietf:params:xml:ns:launch-1.0</extURI>
+					<extURI>urn:ietf:params:xml:ns:fee-0.7</extURI>
+				</svcExtension>
+			</svcs>
+		</login>
+		<clTRID>ABC::1684066781991</clTRID>
+	</command>
+</epp>

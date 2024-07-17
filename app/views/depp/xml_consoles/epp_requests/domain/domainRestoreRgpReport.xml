@@ -1,0 +1,31 @@
+<?xml version ="1.0" encoding="utf-8" standalone="no"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0">
+	<command>
+		<update>
+			<do:update
+				xmlns:do="urn:ietf:params:xml:ns:domain-1.0">
+				<do:name>dev-test.my</do:name>
+				<do:chg/>
+			</do:update>
+		</update>
+		<extension>
+			<rgp:update
+				xmlns:rgp="urn:ietf:params:xml:ns:rgp-1.0">
+				<rgp:restore op="report">
+					<rgp:report>
+						<rgp:preData>Pre registration data</rgp:preData>
+						<rgp:postData>Post registration data</rgp:postData>
+						<rgp:delTime>2013-01-23T12:04:00.000Z</rgp:delTime>
+						<rgp:resTime>2013-01-23T12:05:00.000Z</rgp:resTime>
+						<rgp:resReason>This is the reason </rgp:resReason>
+						<rgp:statement lang="en">This is the 1st statement</rgp:statement>
+						<rgp:statement lang="es">Este es el 2do.</rgp:statement>
+						<rgp:other>This is the "other" section</rgp:other>
+					</rgp:report>
+				</rgp:restore>
+			</rgp:update>
+		</extension>
+		<clTRID>71ee78f333a12b0995245c62f93087e5</clTRID>
+	</command>
+</epp>

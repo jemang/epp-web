@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+	<command>
+		<update>
+			<contact:update
+				xmlns:contact="urn:ietf:params:xml:ns:contact-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd">
+				<contact:id>ck1684075485293d</contact:id>
+				<contact:chg>
+					<contact:postalInfo type="int">
+						<contact:name>aru mugam</contact:name>
+						<contact:org>aru sdn bhd</contact:org>
+						<contact:addr>
+							<contact:street>No 99,street 1</contact:street>
+							<contact:street>Taman Zuraini</contact:street>
+							<contact:city>Seri Kembagan</contact:city>
+							<contact:sp>Selangor</contact:sp>
+							<contact:pc>56140</contact:pc>
+							<contact:cc>MY</contact:cc>
+						</contact:addr>
+					</contact:postalInfo>
+					<contact:voice x="">+60.163113123</contact:voice>
+					<contact:fax x="">+60.163113123</contact:fax>
+					<contact:email>example@example.com</contact:email>
+					<contact:authInfo>
+						<contact:pw>12345</contact:pw>
+					</contact:authInfo>
+				</contact:chg>
+			</contact:update>
+		</update>
+		<clTRID>ABC::1684070710011</clTRID>
+	</command>
+</epp>

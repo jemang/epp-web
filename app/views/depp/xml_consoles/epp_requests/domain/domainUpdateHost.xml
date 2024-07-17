@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+	<command>
+		<update>
+			<domain:update
+				xmlns:domain="urn:ietf:params:xml:ns:domain-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd">
+				<domain:name>dev-test67.my</domain:name>
+				<domain:add>
+					<domain:ns>
+						<domain:hostObj>ns1.dev-test67.my</domain:hostObj>
+					</domain:ns>
+				</domain:add>
+				<domain:rem>
+					<domain:ns>
+						<domain:hostObj>ns1.example.com</domain:hostObj>
+						<domain:hostObj>ns2.example.com</domain:hostObj>
+					</domain:ns>
+				</domain:rem>
+				<domain:chg/>
+			</domain:update>
+		</update>
+		<clTRID>ABC::1684074972933</clTRID>
+	</command>
+</epp>

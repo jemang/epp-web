@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp
+	xmlns="urn:ietf:params:xml:ns:epp-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+	<command>
+		<create>
+			<domain:create
+				xmlns:domain="urn:ietf:params:xml:ns:domain-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd">
+				<domain:name>dev-test72.my</domain:name>
+				<domain:period unit="y">1</domain:period>
+				<domain:ns>
+					<domain:hostObj>ns1.example.com</domain:hostObj>
+					<domain:hostObj>ns2.example.com</domain:hostObj>
+				</domain:ns>
+				<domain:registrant>CK1684075485293D</domain:registrant>
+				<domain:contact type="tech">CK1684075486119K</domain:contact>
+				<domain:contact type="admin">CK1684075485786Q</domain:contact>
+				<domain:contact type="billing">CK1684075486451S</domain:contact>
+				<domain:authInfo>
+					<domain:pw>D+|2E2f5Y0=}*rmHx02321Os0</domain:pw>
+				</domain:authInfo>
+			</domain:create>
+		</create>
+		<extension>
+			<secDNS:create
+				xmlns:secDNS="urn:ietf:params:xml:ns:secDNS-1.1">
+				<secDNS:dsData>
+					<secDNS:keyTag>12345</secDNS:keyTag>
+					<secDNS:alg>3</secDNS:alg>
+					<secDNS:digestType>1</secDNS:digestType>
+					<secDNS:digest>38EC35D5B3A34B44C39B38EC35D5B3A34B44C39B</secDNS:digest>
+					<secDNS:keyData>
+						<secDNS:flags>257</secDNS:flags>
+						<secDNS:protocol>3</secDNS:protocol>
+						<secDNS:alg>1</secDNS:alg>
+						<secDNS:pubKey>AQPJ////4Q==</secDNS:pubKey>
+					</secDNS:keyData>
+				</secDNS:dsData>
+			</secDNS:create>
+		</extension>
+		<clTRID>ABC::1684075486786</clTRID>
+	</command>
+</epp>

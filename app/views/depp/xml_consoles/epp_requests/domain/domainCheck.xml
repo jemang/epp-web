@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding ="utf-8" standalone ="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+    <command>
+	<check>
+            <do:check
+                xmlns:do="urn:ietf:params:xml:ns:domain-1.0">
+                 <do:name>test.my</do:name>
+            </do:check>
+        </check>
+	<clTRID>6e4bf3e8723563ba323595f1fe8c3386</clTRID>
+    </command>
+</epp>
